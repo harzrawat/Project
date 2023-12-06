@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Std_Login Page</title>
+    <title>Faculty_Login Page</title>
     <style>
         body {
-            background-color: aqua;
+            background-color: rgb(149, 208, 208);
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -47,6 +47,7 @@
         }
         #su12 {
             width: 40%;
+            
         }
 
         button:hover {
@@ -63,8 +64,8 @@
     
     <form id="loginForm">
         <div>
-            <h3 id="asj" style="float: left; padding-right: 20px;">Acacdemic Portal <br><hr> Student Login page</h3>
-            <img src="./photos/student.svg" alt="std" width="70px">
+            <h3 id="asj" style="float: left; padding-right: 20px;">Score Entry Form <br><hr> Faculty Login page</h3>
+            <img src="./photos/teacher.svg" alt="std" width="70px">
         </div>
         <div>
             <br>
@@ -87,22 +88,12 @@
             var password = document.getElementById('password').value;
 
             // Simple validation (in a real application, you would send the data to a server for validation)
-            if (username == 23016 && password == 'sitare')
+            if (username == 'kushal_shah' && password == 'sitare')
              {
                 alert('Login successful!');
-                window.location.href = './portal.html';
+                window.location.href = './form_link.html';
             
             }
-            else if (username == 22001 && password == 'sitare'){
-             
-                alert('Login successful!');
-                window.location.href = './portal.html';
-             }
-             else if (username == 23011 && password == 'sitare'){
-             
-             alert('Login successful!')
-             window.location.href = './portal.html';;
-          }
 
             else {
                 alert('Login failed. Please check your username and password.');
